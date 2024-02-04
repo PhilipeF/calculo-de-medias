@@ -13,14 +13,6 @@ const notas = [];
 const media = 7;
 let novaAtividade = '';
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    inserirNovaAtividade();
-    calcularMedia();
-
-    inputNomeAtiviadade.value = '';
-    inputNotaAtividade.value = '';
-})
 
 function inserirNovaAtividade() {
     atividades.push(inputNomeAtiviadade.value);
@@ -51,5 +43,14 @@ function calcularMedia() {
         '<span class="resultado aprovado">Aprovado</span>' :
         '<span class="resultado reprovado">Reprovado</span>';
 }
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    inserirNovaAtividade();
+    calcularMedia();
+
+    inputNomeAtiviadade.value = '';
+    inputNotaAtividade.value = '';
+})
 
 
