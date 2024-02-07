@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 02</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="./images/logo.png" alt="Logo marca da aplicação">
+        <h1>Calculadora de médias</h1>
+    </header>
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Nome da atividade">
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Nonta" max="10" min="0">
+                    </td>
+                    <td>
+                        <button type="submit">Adicionar +</button>
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Nome da atividade</td>
+                    <td>Nota</td>
+                    <td>Aprovado?</td>
+                </tr>
+                <tr>
+                    <td>Atividade A</td>
+                    <td>7</td>
+                    <td> <img src="./images/aprovado.png" alt="emotion aprovado"></td>
+                </tr>
+                <tr>
+                    <td>Atividade B</td>
+                    <td>4</td>
+                    <td><img src="./images/reprovado.png" alt="emotion reprovado"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Nota média</td>
+                    <td>11</td>
+                    <td>Reprovado</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </form>
 </body>
+
 </html>
