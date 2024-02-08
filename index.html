@@ -4,63 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 02</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Projeto 02</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <img src="./images/logo.png" alt="Logo marca da aplicação">
-        <h1>Calculadora de médias</h1>
-    </header>
-    <form>
-        <table>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="Logo marca da aplicação">
+            <h1>Calculadora de médias</h1>
+        </header>
+        <form>
+            <input type="text" placeholder="Nome da atividade">
+            <input type="number" placeholder="Nonta" max="10" min="0">
+            <button type="submit">Adicionar +</button>
+        </form>
+
+        <table cellspacing="0">
             <thead>
                 <tr>
-                    <td>
-                        <input type="text" placeholder="Nome da atividade">
-                    </td>
-                    <td>
-                        <input type="number" placeholder="Nonta" max="10" min="0">
-                    </td>
-                    <td>
-                        <button type="submit">Adicionar +</button>
-                    </td>
+                    <th>Nome da atividade</th>
+                    <th>Nota</th>
+                    <th>Aprovado?</th>
                 </tr>
             </thead>
-
             <tbody>
                 <tr>
-                    <td>Nome da atividade</td>
-                    <td>Nota</td>
-                    <td>Aprovado?</td>
-                </tr>
-                <tr>
-                    <td>Atividade A</td>
+                    <td>Atividade 1</td>
                     <td>7</td>
-                    <td> <img src="./images/aprovado.png" alt="emotion aprovado"></td>
-                </tr>
-                <tr>
-                    <td>Atividade B</td>
-                    <td>4</td>
-                    <td><img src="./images/reprovado.png" alt="emotion reprovado"></td>
-                </tr>
+                    <td><img src="./images/aprovado.png" alt="Emoji festejando"></td>
+                </tr>                
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Nota média</td>
-                    <td>11</td>
-                    <td>Reprovado</td>
+                    <td>Média final</td>
+                    <td>7</td>
+                    <td><span class="resultado aprovado">Aprovado</span></td>
                 </tr>
             </tfoot>
-
         </table>
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>
