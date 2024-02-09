@@ -19,12 +19,11 @@
             <img src="./images/logo.png" alt="Logo marca da aplicação">
             <h1>Calculadora de médias</h1>
         </header>
-        <form>
-            <input type="text" placeholder="Nome da atividade">
-            <input type="number" placeholder="Nonta" max="10" min="0">
+        <form id="form-atividade">
+            <input type="text" id="nome-atividade" required placeholder="Nome da atividade">
+            <input type="number" id="nota-atividade" required placeholder="Nota" max="10" min="0">
             <button type="submit">Adicionar +</button>
         </form>
-
         <table>
             <thead>
                 <tr>
@@ -34,16 +33,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Atividade 1</td>
-                    <td>7</td>
-                    <td><img src="./images/aprovado.png" alt="Emoji festejando"></td>
-                </tr>                
+                
             </tbody>
             <tfoot>
                 <tr>
                     <td>Média final</td>
-                    <td>7</td>
+                    <td> -- </td>
                     <td><span class="resultado aprovado">Aprovado</span></td>
                 </tr>
             </tfoot>
