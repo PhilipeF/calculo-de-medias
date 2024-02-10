@@ -8,7 +8,6 @@ const tbody = document.querySelector('tbody');
 
 const imgemAprovado = '<img src="./images/aprovado.png" alt="Emoji festejando">';
 const imagemReprovado = '<img src="./images/reprovado.png" alt="Emoji decepcionado">';
-const spanAprovadoReprovado = '<span class="resultado aprovado"></span>';
 
 const atividades = [];
 const notas = [];
@@ -49,8 +48,9 @@ function calcularMedia() {
 
     mediaDasNotas = somaDasNotas / notas.length;
 
-    mediaFinal.innerHTML = mediaDasNotas.toFixed(2);
+    mediaFinal.innerHTML = Math.ceil(mediaDasNotas * 100) / 100;
     resultadoFinal.innerHTML = mediaDasNotas >= media ?
         '<span class="resultado aprovado">Aprovado</span>' :
         '<span class="resultado reprovado">Reprovado</span>';
 }
+
