@@ -49,8 +49,8 @@ function calcularMedia() {
 
     mediaDasNotas = somaDasNotas / notas.length;
 
-    mediaFinal.innerHTML = mediaDasNotas;
+    mediaFinal.innerHTML = mediaDasNotas.toFixed(2);
     resultadoFinal.innerHTML = mediaDasNotas >= media ?
-        '<span class="resultado aprovado">Aprovado</span>' : 
+        '<span class="resultado aprovado">Aprovado</span>' :
         '<span class="resultado reprovado">Reprovado</span>';
 }
