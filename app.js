@@ -12,7 +12,6 @@ const imagemReprovado = '<img src="./images/reprovado.png" alt="Emoji decepciona
 const atividades = [];
 const notas = [];
 const media = 7;
-
 let novaAtividade = '';
 
 form.addEventListener('submit', (e) => {
@@ -53,4 +52,5 @@ function calcularMedia() {
         '<span class="resultado aprovado">Aprovado</span>' :
         '<span class="resultado reprovado">Reprovado</span>';
 }
+
 
