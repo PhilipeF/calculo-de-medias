@@ -3,7 +3,6 @@ const inputNomeAtiviadade = document.getElementById('nome-atividade');
 const inputNotaAtividade = document.getElementById('nota-atividade');
 const mediaFinal = document.getElementById('media-final');
 const resultadoFinal = document.getElementById('resultado-final');
-
 const tbody = document.querySelector('tbody');
 
 const imgemAprovado = '<img src="./images/aprovado.png" alt="Emoji festejando">';
